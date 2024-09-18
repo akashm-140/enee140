@@ -1,4 +1,4 @@
-Task 2a
+//Task 2a
 #include <stdio.h>
 
 int main() {
