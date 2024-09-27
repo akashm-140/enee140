@@ -1,0 +1,53 @@
+/*
+ * enee140_gen_rnd.c
+ *
+ *   Generate random numbers, in different ranges and
+ *   from various distributions.
+ *
+ */
+
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <assert.h>
+
+
+/*
+ * Public API -- Function prototypes
+ */
+
+void seed_rnd (unsigned seed, int algorithm);
+
+void get_rnd_max();
+
+unsigned gen_rnd();
+
+unsigned gen_rnd_limit(unsigned limit);
+
+int gen_rnd_range(int min_gen, int max_gen);
+
+float gen_rnd_float(float min_gen, float max_gen);
+
+float gen_rnd_exp(float mean);
+
+
+/*
+ * State variables of the RNG.
+ */
+
+unsigned X;           // Current value of RNG
+unsigned m;           // Modulus exponent: M = 2^m
+unsigned A;           // Multiplier
+unsigned B;           // Increment
+
+
+/*
+ * Main function
+ */
+
+int
+main()
+{
+        return 0;
+}
